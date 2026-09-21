@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cloth Shopping Store</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; padding-bottom: 60px; }
         header { background-color: #333; color: white; padding: 15px; text-align: center; }
         nav { display: flex; justify-content: center; background: #444; padding: 10px; }
         nav a { color: white; margin: 0 15px; text-align: center; text-decoration: none; }
         .container { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; }
         .product-card { background: white; margin: 15px; padding: 15px; border-radius: 8px; width: 250px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
-        .product-card img { max-width: 100%; height: auto; border-radius: 4px; }
+        .product-card img { width: 100%; max-width: 200px; height: 200px; object-fit: cover; border-radius: 4px; margin-bottom: 10px; }
         .price { color: #e44d26; font-size: 18px; font-weight: bold; margin: 10px 0; }
         .buy-btn { background-color: #e44d26; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; width: 100%; }
         footer { background-color: #333; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
@@ -34,6 +34,7 @@
     <!-- Product 1 -->
     <div class="product-card">
         <h3>Stylish T-Shirt</h3>
+        <img src="https://unsplash.com" alt="T-Shirt">
         <p class="price">₹499</p>
         <button class="buy-btn">Add to Cart</button>
     </div>
@@ -41,10 +42,15 @@
     <!-- Product 2 -->
     <div class="product-card">
         <h3>Casual Jeans</h3>
+        <img src="https://unsplash.com" alt="Jeans">
         <p class="price">₹999</p>
         <button class="buy-btn">Add to Cart</button>
     </div>
 </div>
+
+<footer>
+    <p>&copy; 2026 My Cloth Store. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
